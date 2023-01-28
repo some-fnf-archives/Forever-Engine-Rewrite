@@ -19,6 +19,8 @@ class Main extends Sprite
 
 	public static var engineVersion:String = '1.0.0';
 
+	private final zoom:Float = -1;
+
 	public static function main():Void
 		Lib.current.addChild(new Main());
 
@@ -34,8 +36,19 @@ class Main extends Sprite
 		// haxeui stuff
 		haxe.ui.Toolkit.init();
 
+		var stageWidth:Int = Lib.current.stage.stageWidth;
+		var stageHeight:Int = Lib.current.stage.stageHeight;
+
+		if (zoom == -1) {
+			var ratioX:Float = stageWidth / 1280;
+			var ratioY:Float = stageHeight / 720;
+			zoom = Math.min(ratioX, ratioY);
+			width = Math.ceil(stageWidth / zoom);
+			height = Math.ceil(stageHeight / zoom);
+		}
+
 		var gameCreate:FlxGame;
-		gameCreate = new FlxGame(1280, 720, Init, 1, defaultFramerate, defaultFramerate, true, false);
+		gameCreate = new FlxGame(1280, 720, Init, #if (flixel < "5.0.0") zoom, #end defaultFramerate, defaultFramerate, true, false);
 		addChild(gameCreate);
 
 		var overlay:Overlay;
