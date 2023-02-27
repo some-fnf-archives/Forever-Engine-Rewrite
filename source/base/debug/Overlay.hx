@@ -40,7 +40,7 @@ class Overlay extends TextField
 	{
 		var size:Float = num;
 		var data = 0;
-		while (size > 1024 && data < intervalArray.length - 1)
+		while (size > 1000 && data < intervalArray.length - 1)
 		{
 			data++;
 			size = size / 1000;
