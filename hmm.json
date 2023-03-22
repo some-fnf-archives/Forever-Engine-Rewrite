@@ -2,52 +2,52 @@
    "dependencies": [
       {
          "name": "lime",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "flixel",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "flixel-addons",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "flixel-ui",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "openfl",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "hxcpp",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "hscript",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "haxeui-core",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "haxeui-flixel",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
          "name": "hxcpp-debug-server",
-         "type": "haxelib",
+         "type": "install",
          "version": null
       },
       {
