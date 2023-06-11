@@ -8,17 +8,17 @@
       {
          "name": "flixel",
          "type": "install",
-         "version": null
+         "version": "5.0.0"
       },
       {
          "name": "flixel-addons",
          "type": "install",
-         "version": null
+         "version": "3.1.1"
       },
       {
          "name": "flixel-ui",
          "type": "install",
-         "version": null
+         "version": "2.5.0"
       },
       {
          "name": "openfl",

@@ -3,7 +3,11 @@ package base;
 import flixel.FlxG;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
+#if (flixel >= "5.3.1")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 import openfl.media.Sound;
 import states.MusicBeatState.MusicHandler;
 

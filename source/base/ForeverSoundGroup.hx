@@ -1,6 +1,10 @@
 package base;
 
+#if (flixel >= "5.3.1")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 import openfl.media.Sound;
 
 class ForeverSoundGroup
